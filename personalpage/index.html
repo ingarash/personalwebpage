@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Arash Alghasi">
+    <meta name="keywords"
+        content="HTML, CSS, JavaScript, Arash, Alghasi, Arash Alghasi, unige, computer, computer engineering, iran, Iran, Italy, Italy">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <title>Personla Webpage</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <!-- nav bar for mobile version -->
+        <div class="container">
+
+            <a class="hometext" href="https://ingarash.github.io/personalwebpage/personalpage/index.html">brave
+                developer</a>
+
+            <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="open menu bar">
+
+            <nav>
+                <img id="mobile-exit-cta" class="mobile-exit" src="images/exit.svg" alt="Close menu bar">
+                <ul class="left-menu">
+                    <li class="current"><a
+                            href="https://ingarash.github.io/personalwebpage/personalpage/index.html">home</a></li>
+                    <li><a href="https://ingarash.github.io/personalwebpage/personalpage/cv/indexcv.html">resume</a>
+                    </li>
+                    <li><a href="#">works</a></li>
+                </ul>
+
+                <ul class="right menu">
+                    <li><a href="#">about me</a></li>
+                    <li class="hire-me-cta"><a href="#">hire me</a></li>
+                </ul>
+
+            </nav>
+
+        </div>
+    </div>
+    <!-- hero section for introducing myself -->
+    <section class="hero">
+        <div class="container">
+            <div class="left-col">
+                <p class="subhead">Where there is a will, there is a way</p>
+                <h1><span id="iam"> I am </span>Arash Alghasi.</h1>
+                <p>Computer engineer, web developer, freelancer, mountaineer, ...</p>
+            </div>
+            <img class="hero-img" src="svg file/434037.svg" alt="illustration">
+        </div>
+    </section>
+    <!-- work sample section -->
+    <section class="work">
+        <div class="container">
+            <p>projects</p>
+        </div>
+    </section>
+
+    <!-- biography section -->
+    <section class="testimonial-section">
+        <div class="container">
+            <div class="bio">
+                <img class="potrait" src="images/person.jpg" alt="my potrait">
+                <p>
+                    I'm Arash and I born in Iran, I am living in Italy and I am studying computer engineering.
+                </p>
+                <cite>- Arash alghasi</cite>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-left">
+                <h1>contact</h1>
+                <form action="https://formspree.io/f/mzbybyoo" method="POST" target="_blank">
+                    <label for="name">name</label>
+                    <input type="text" id="name" name="name" placeholder="name">
+
+                    <label for="mail">email</label>
+                    <input type="email" id="mail" name="email" placeholder="email">
+
+                    <label for="massage">Massage</label>
+                    <textarea name="massage" id="massage" cols="40" rows="20" placeholder="Write here ..."></textarea>
+
+                    <input type="submit" class="sent-massage-cta" value="send massage">
+                </form>
+            </div>
+
+            <div class="comtainer-right">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13553.966094521928!2d8.916154359580307!3d44.42556428953243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12d343fe6e13e43d%3A0x37454174488aa53c!2sLagaccio%2C%20Genoa%2C%20Metropolitan%20City%20of%20Genoa!5e0!3m2!1sen!2sit!4v1617627842783!5m2!1sen!2sit"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section class="bottom">
+        <div class="container">
+            <ul>
+                <li class="linkedin"><a href="#" target="_blank"> <img src="images/linkedin-brands.svg"
+                            alt="linkedinicon" class="linkicon"> linkedin</a></li>
+                <li class="whatsapp"><a href="#" target="_blank"> <img src="images/whatsapp-brands.svg"
+                            alt="whatsappicon" class="waicon"> whatsApp</a></li>
+                <li class="instagram"><a href="https://www.instagram.com/arash__3132/" target="_blank"> <img
+                            src="images/instagram-brands.svg" alt="instagramicon" class="instaicon"> instagram</a>
+                </li>
+                <li class="telegram"><a href="#" target="_blank"> <img src="images/telegram-brands.svg"
+                            alt="telegramicon" class="teleicon"> telegram</a></li>
+                <!-- <li class=""></li> -->
+            </ul>
+        </div>
+    </section>
+
+
+    <script>
+
+        const mobileBtn = document.getElementById('mobile-cta')
+        nav = document.querySelector('nav')
+        mobileBtnExit = document.getElementById('mobile-exit-cta');
+
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        })
+
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        })
+    </script>
+
+</body>
+
+</html>
